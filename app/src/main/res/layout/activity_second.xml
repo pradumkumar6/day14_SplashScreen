@@ -5,7 +5,9 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SecondActivity">
+    android:background="@drawable/mainbackground"
+    android:orientation="vertical"
+    tools:context=".SignUpActivity">
 
     <TextView
         android:id="@+id/textView"
@@ -13,7 +15,75 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:gravity="center"
-        android:textSize="30dp"
-        android:layout_weight="1"
-        android:text="Hello Splash Screen😁" />
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_margin="20dp"
+        android:text="SignUp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:startIconDrawable="@drawable/baseline_person_24"
+        android:layout_margin="10dp"
+        app:helperText="*Required"
+        app:helperTextTextColor="#FF0000"
+        android:background="@drawable/greybackground">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:inputType="text"
+            android:hint="Full Name"
+            android:background="@drawable/greybackground"
+            android:gravity="center"
+            android:layout_height="50dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:startIconDrawable="@drawable/baseline_person_24"
+        android:layout_margin="10dp"
+        app:helperText="*Required"
+        app:helperTextTextColor="#FF0000"
+        android:background="@drawable/greybackground">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:inputType="textEmailAddress"
+            android:hint="Email"
+            android:background="@drawable/greybackground"
+            android:gravity="center"
+            android:layout_height="50dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:startIconDrawable="@drawable/baseline_person_24"
+        android:layout_margin="10dp"
+        app:helperText="*Required"
+        app:helperTextTextColor="#FF0000"
+        app:endIconMode="password_toggle"
+        android:background="@drawable/greybackground">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:inputType="textPassword"
+            android:hint="Password"
+            android:background="@drawable/greybackground"
+            android:gravity="center"
+            android:layout_height="50dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="200dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:background="@drawable/greybackground"
+        android:text="SIGN UP" />
 </LinearLayout>
